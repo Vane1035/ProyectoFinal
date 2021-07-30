@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-weight: 900;
+  font-size: 30px;
+  color: #efb810;
+  -webkit-text-stroke: 0.01px rgb(47, 42, 42);
+  font-family: "Amita", cursive;
+}
+.container1 {
+  background-image: url("../img/campestre1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  /*justificar contenido de arriba a abajo*/
+  justify-content: center;
+  align-items: center;
+}
+.container1:before {
+  content: "";
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.7;
+}
+.container1 h1,
+h4 {
+  position: relative;
+}
+.container1 h1 {
+  font-size: 60px;
+}
+.container1 h4 {
+  font-size: 40px;
+  color: white;
+  width: 60%;
+  text-align: center;
+}
+.container2-principal {
+  background-color: #efb810;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: unset;
+  margin-top: 50px;
+}
+.container2 {
+  background-image: url("../img/deportes.jpg");
+  background-repeat: no-repeat;
+  background-color: teal;
+
+  background-size: 100% 100%;
+  width: 50%;
+  height: 300px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.deportes {
+  margin-left: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.deportes h3 {
+  font-size: 60px;
+  /*-webkit-text-stroke: 1px white;*/
+  text-shadow: 1px 3px 0px white;
+}
+.deportes h4 {
+  font-size: 20px;
+}
+.imgServicios {
+  width: 400px;
+  height: 500px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+  margin: 6px;
+  padding: 30px;
+  /*border: solid;*/
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.imgServicios:hover {
+  -webkit-transform: scale(0.1);
+  transform: scale(1.1);
+  background-color: efb810;
+}
+.titulosalones {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.titulosalones h3 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #efb810;
+  -webkit-text-stroke: 2px black;
+  text-shadow: 3px 5px 0px black;
+}
+.container3 {
+  background-color: #efb810;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 80px;
+  margin-top: 80px;
+}
+.parrafoEventos {
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+.col-4 h3 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #efb810;
+  -webkit-text-stroke: 2px black;
+  text-shadow: 3px 5px 0px black;
+}
+.parrafoEventos {
+  font-size: 20px;
+  font-weight: 800;
+}
+.parallax {
+  margin: 70px;
+  height: 700px;
+  background-image: url("../img/cama.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.parallax h3 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #efb810;
+  -webkit-text-stroke: 2px black;
+  text-shadow: 3px 5px 0px black;
+}
+.parallax p {
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+  -webkit-text-stroke: 2px white;
+}
+.headerprincipal {
+  background-color: black;
+  opacity: 1.1;
+}
+.headerprincipal a {
+  color: #efb810;
+}
+.animarscroll {
+  opacity: 0;
+  transition: all 2s ease-in;
+}
+.animarscroll2 {
+  opacity: 0;
+  transition: all 2s ease-in;
+}
+.mostrarIzquierda {
+  animation: mostrarIzquierda 1s;
+}
+@keyframes mostrarIzquierda {
+  0% {
+    transform: translateX(-90px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+footer {
+  background-image: url("../img/footer.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 600px;
+  margin-top: 200px;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-bottom: 50px;
+  color: #efb810;
+  font-size: 25px;
+}
+.logo {
+  border-radius: 100%;
+}
+
+footer::before {
+  content: "";
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.9;
+  padding-bottom: 50px;
+}
+footer .container2-footer,
+.logo {
+  position: relative;
+}

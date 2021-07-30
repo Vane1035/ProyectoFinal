@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+form .grupo {
+  position: relative;
+  margin: 30px;
+}
+input {
+  background: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #5e5d5d;
+}
+input:focus {
+  outline: none;
+  color: black;
+}
+label {
+  color: #5e5d5d;
+  /*tamaño letra*/
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  transition: 0.5s ease-in-out all;
+  pointer-events: none;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: -14px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #efb810;
+}
+.barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.barra::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: #efb810;
+  transition: 0.3s ease width;
+  left: 0;
+}
+input:focus ~ .barra::before,
+input:valid ~ .barra::before {
+  width: 90%;
+  color: #efb810;
+}
+.btn {
+  width: 100px;
+  margin-left: 30px;
+}
+.container-formulario {
+  background-image: url("../img/logo.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50% 100%;
+
+  background-color: black;
+}
+.titulo-contactanos {
+  margin-left: 30px;
+}

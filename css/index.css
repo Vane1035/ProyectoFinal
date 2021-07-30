@@ -1,0 +1,40 @@
+.img-login {
+  margin-top: -80px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+}
+.container-login {
+  margin-top: 8%;
+  box-shadow: 10px 10px 10px blue;
+}
+
+.input-texto input {
+  height: 40px;
+  width: 260px;
+  text-align: center;
+}
+.prueba {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registrarse {
+  text-align: left;
+
+  margin-top: -48px;
+}
+.boton-ingresar {
+  text-align: right;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.titulologin {
+  font-weight: 900;
+  font-size: 60px;
+  color: #efb810;
+  /* text-shadow: 0px 8px black;*/
+  -webkit-text-stroke: 0.01px rgb(47, 42, 42);
+  font-family: "Amita", cursive;
+}
